@@ -21,23 +21,23 @@ public class BookingRoom {
 
 	@Test
 	public void mainTest() throws InterruptedException {
-//		ExtentReports logger = ExtentReports.get(BookingRoom.class);
-//		logger.init("/home/qc/eclipse-workspace/MyFirstMavenProject/advanceReport.html", true);
-//		logger.startTest("Stay Peace");
+		ExtentReports logger = ExtentReports.get(BookingRoom.class);
+		logger.init("/home/qc/eclipse-workspace/MyFirstMavenProject/advanceReport.html", true);
+		logger.startTest("Stay Peace");
 		HostelView browser = new HostelView();
 		browser.launch();		
-//		logger.log(LogStatus.INFO, "Browser Launched Successfully");
+		logger.log(LogStatus.INFO, "Browser Launched Successfully");
 		HostelList viewlist = new HostelList();
 		viewlist.hostels();
-//		logger.log(LogStatus.INFO, "List of hostels view page");
+		logger.log(LogStatus.INFO, "List of hostels view page");
 		HostelQuotePrice pricing = new HostelQuotePrice();
 		pricing.priceList();
-//		logger.log(LogStatus.INFO, "View price for rooms and services");		
+		logger.log(LogStatus.INFO, "View price for rooms and services");		
 		Booking book = new Booking();
 		book.bookRoom();		
-//		logger.log(LogStatus.INFO, "Booked Successfully");		
-//		logger.log(LogStatus.PASS, "Test passed");
-//		logger.endTest();
+		logger.log(LogStatus.INFO, "Booked Successfully");		
+		logger.log(LogStatus.PASS, "Test passed");
+		logger.endTest();
 	}
 
 }
