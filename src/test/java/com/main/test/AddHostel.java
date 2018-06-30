@@ -25,7 +25,7 @@ public class AddHostel {
 		Login browser = new Login();
 		browser.launch();
 		browser.signIn();
-		logger.log(LogStatus.INFO, "Browser Launched Successfully");
+		logger.log(LogStatus.INFO, "Browser Launched Successfully in Firefox");
 		CreateHostel hstl = new CreateHostel();
 		hstl.newHostel();
 		logger.log(LogStatus.INFO, "Hostel added successfully");
