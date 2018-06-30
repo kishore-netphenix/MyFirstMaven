@@ -26,7 +26,7 @@ public static WebDriver driver;
 	public void browser() {
 		System.setProperty("webdriver.gecko.driver", "/home/qc/Documents/Selenium/geckodriver-v0.20.1-linux64/geckodriver");
 		driver = new FirefoxDriver();
-		driver.navigate().to("http://localhost:4200");
+		driver.navigate().to("http://localhost:4000");
 		String title = driver.getTitle();
 		System.out.println("Page title is -->"+ title);
 		String url = driver.getCurrentUrl();
@@ -44,7 +44,7 @@ public static WebDriver driver;
 		driver.findElement(By.name("first_name")).sendKeys("Kishore");
 		driver.findElement(By.name("last_name")).sendKeys("Kumar");
 		driver.findElement(By.name("name")).sendKeys("shamkishore");
-		driver.findElement(By.name("email")).sendKeys("kishore89.ooty@gmail.com");
+		driver.findElement(By.name("email")).sendKeys("kishore89@gmail.com");
 		WebDriverWait pswd = new WebDriverWait(driver, 500);
 		pswd.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"login\"]/div/div/div/app-login/form[2]/app-register/div/div[2]/div/div[5]/input"))).sendKeys("1234");
 		driver.findElement(By.name("confirmpassword")).sendKeys("1234");
@@ -55,6 +55,7 @@ public static WebDriver driver;
 		usertype.selectByIndex(0);
 		WebDriverWait acpt = new WebDriverWait(driver, 500);
 		acpt.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"login\"]/div/div/div/app-login/form[2]/app-register/div/div[2]/div/div[11]/input"))).click();
+		driver.findElement(By.xpath("//button[contains(text(), 'Submit')]")).click();
 	}
 }
 

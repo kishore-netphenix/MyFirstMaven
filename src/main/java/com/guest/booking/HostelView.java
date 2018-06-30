@@ -20,7 +20,7 @@ public class HostelView {
 	public void launch() {
 		System.setProperty("webdriver.gecko.driver", "/home/qc/Documents/Selenium/geckodriver-v0.20.1-linux64/geckodriver");
 		driver = new FirefoxDriver();
-		driver.navigate().to("http://localhost:4200");
+		driver.navigate().to("http://localhost:4000");
 		String title = driver.getTitle();
 		System.out.println("Page title is -->"+ title);
 		String url = driver.getCurrentUrl();

@@ -22,7 +22,7 @@ public class BookingRoom {
 	@Test
 	public void mainTest() throws InterruptedException {
 		ExtentReports logger = ExtentReports.get(BookingRoom.class);
-		logger.init("/home/qc/eclipse-workspace/MyFirstMavenProject/advanceReport.html", true);
+		logger.init("/home/qc/eclipse-workspace/MyFirstMaven/advanceReport.html", true);
 		logger.startTest("Stay Peace");
 		HostelView browser = new HostelView();
 		browser.launch();		

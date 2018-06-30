@@ -20,7 +20,7 @@ public class AddHostel {
 	@Test
 	public void mainTest() throws InterruptedException {
 		ExtentReports logger = ExtentReports.get(AddHostel.class);
-		logger.init("//home//qc//eclipse-workspace//HostelManagement//advanceReport.html", true);
+		logger.init("/home/qc/eclipse-workspace/MyFirstMaven/advanceReport.html", true);
 		logger.startTest("Stay Peace");
 		Login browser = new Login();
 		browser.launch();

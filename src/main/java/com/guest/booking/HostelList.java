@@ -24,7 +24,7 @@ public class HostelList extends HostelView {
 		Select country = new Select(driver.findElement(By.xpath("//select[@name='search_country']")));
 		country.selectByIndex(1);
 		Select city = new Select(driver.findElement(By.xpath("//select[@name='search_city']")));
-		city.selectByIndex(1);
+		city.selectByIndex(2);
 		Select guests = new Select(driver
 				.findElement(By.xpath("/html/body/app-root/app-guest-index/app-header/app-header-search/div/div/div/div[2]/select")));
 		guests.selectByIndex(2);
