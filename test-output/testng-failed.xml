@@ -1,13 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [Stay Peace]" parallel="tests">
+  <test thread-count="1" name="Hostel Creation(failed)" parallel="tests">
     <classes>
-      <class name="com.main.test.AddHostel">
+      <class name="com.admin.newhostel.CreateHostel">
         <methods>
-          <include name="mainTest"/>
+          <include name="launch"/>
+          <include name="signIn"/>
         </methods>
-      </class> <!-- com.main.test.AddHostel -->
+      </class> <!-- com.admin.newhostel.CreateHostel -->
+      <class name="com.admin.newhostel.AddRoom">
+        <methods>
+          <include name="launch"/>
+          <include name="signIn"/>
+        </methods>
+      </class> <!-- com.admin.newhostel.AddRoom -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Hostel Creation(failed) -->
+  <test thread-count="1" name="Hostel Booking(failed)" parallel="tests">
+    <classes>
+      <class name="com.guest.booking.Booking">
+        <methods>
+          <include name="bookRoom"/>
+          <include name="launch"/>
+        </methods>
+      </class> <!-- com.guest.booking.Booking -->
+      <class name="com.guest.booking.HostelQuotePrice">
+        <methods>
+          <include name="priceList"/>
+          <include name="launch"/>
+        </methods>
+      </class> <!-- com.guest.booking.HostelQuotePrice -->
+    </classes>
+  </test> <!-- Hostel Booking(failed) -->
+</suite> <!-- Failed suite [Stay Peace] -->

@@ -37,10 +37,9 @@ public static WebDriver driver;
 	@Test
 	public void signIn() {
 		driver.findElement(By.xpath("//a[@data-hover='SIGNIN/SIGNUP']")).click();
-		driver.findElement(By.name("user_name")).sendKeys("arul");
+		driver.findElement(By.name("user_name")).sendKeys("sam");
 		driver.findElement(By.name("password")).sendKeys("1234");
 		driver.findElement(By.xpath("//button[contains(text(), 'Login')]")).click();
-		System.out.println("Login Successful");
 	}
 
 }

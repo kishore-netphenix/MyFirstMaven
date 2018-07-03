@@ -17,6 +17,7 @@ import com.relevantcodes.extentreports.LogStatus;
  */
 public class AddHostel {
 	
+	
 	@Test
 	public void mainTest() throws InterruptedException {
 		ExtentReports logger = ExtentReports.get(AddHostel.class);
