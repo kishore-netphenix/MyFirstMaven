@@ -17,20 +17,4 @@
       </class> <!-- com.admin.newhostel.AddRoom -->
     </classes>
   </test> <!-- Hostel Creation(failed) -->
-  <test thread-count="1" name="Hostel Booking(failed)" parallel="tests">
-    <classes>
-      <class name="com.guest.booking.Booking">
-        <methods>
-          <include name="bookRoom"/>
-          <include name="launch"/>
-        </methods>
-      </class> <!-- com.guest.booking.Booking -->
-      <class name="com.guest.booking.HostelQuotePrice">
-        <methods>
-          <include name="priceList"/>
-          <include name="launch"/>
-        </methods>
-      </class> <!-- com.guest.booking.HostelQuotePrice -->
-    </classes>
-  </test> <!-- Hostel Booking(failed) -->
 </suite> <!-- Failed suite [Stay Peace] -->

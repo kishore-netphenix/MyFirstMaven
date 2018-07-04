@@ -25,9 +25,6 @@ public class HostelList extends HostelView {
 		country.selectByIndex(1);
 		Select city = new Select(driver.findElement(By.xpath("//select[@name='search_city']")));
 		city.selectByIndex(2);
-		Select guests = new Select(driver
-				.findElement(By.xpath("/html/body/app-root/app-guest-index/app-header/app-header-search/div/div/div/div[2]/select")));
-		guests.selectByIndex(2);
 		WebDriverWait search = new WebDriverWait(driver, 500);
 		search.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/app-root/app-guest-index/app-header/app-header-search/div/div/div/button"))).click();
 //		WebElement slider = driver.findElement(By.xpath(

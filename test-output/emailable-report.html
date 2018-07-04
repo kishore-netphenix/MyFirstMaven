@@ -8,11 +8,67 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">34,192</td><td></td><td></td></tr>
+<tr><th colspan="7">Stay Peace</th></tr>
+<tr><td><a href="#t0">Hostel Creation</a></td><td class="num">3</td><td class="num">0</td><td class="num attn">2</td><td class="num">54,694</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Hostel Booking</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">15,273</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">6</th><th class="num">0</th><th class="num attn">2</th><th class="num">69,967</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.main.test.AddHostel</td><td><a href="#m0">mainTest</a></td><td rowspan="1">1530614054865</td><td rowspan="1">34051</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Stay Peace</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Hostel Creation &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.admin.newhostel.AddRoom</td><td><a href="#m0">signIn</a></td><td rowspan="1">1530684067295</td><td rowspan="1">10017</td></tr><tr class="failedodd"><td rowspan="1">com.admin.newhostel.CreateHostel</td><td><a href="#m1">signIn</a></td><td rowspan="1">1530684055025</td><td rowspan="1">10033</td></tr><tr><th colspan="4">Hostel Creation &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.admin.newhostel.AddRoom</td><td><a href="#m2">newRooms</a></td><td rowspan="1">1530684065067</td><td rowspan="1">2224</td></tr><tr class="passedodd"><td rowspan="1">com.admin.newhostel.CreateHostel</td><td><a href="#m3">newHostel</a></td><td rowspan="1">1530684038721</td><td rowspan="1">16299</td></tr><tr class="passedeven"><td rowspan="1">com.admin.newhostel.Login</td><td><a href="#m4">signIn</a></td><td rowspan="1">1530684033016</td><td rowspan="1">5542</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Hostel Booking &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.guest.booking.Booking</td><td><a href="#m5">bookRoom</a></td><td rowspan="1">1530684091374</td><td rowspan="1">1262</td></tr><tr class="passedodd"><td rowspan="1">com.guest.booking.HostelList</td><td><a href="#m6">hostels</a></td><td rowspan="1">1530684086949</td><td rowspan="1">1113</td></tr><tr class="passedeven"><td rowspan="1">com.guest.booking.HostelQuotePrice</td><td><a href="#m7">priceList</a></td><td rowspan="1">1530684088071</td><td rowspan="1">3299</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">com.main.test.AddHostel#mainTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Hostel Creation</h2><h3 id="m0">com.admin.newhostel.AddRoom#signIn</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Unable to locate element: //a[@data-hover=&apos;SIGNIN/SIGNUP&apos;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;
+System info: host: &apos;qc&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.15.0-24-generic&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 60.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 7717, moz:profile: /tmp/rust_mozprofile.YmUI5V..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, platformVersion: 4.15.0-24-generic, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 00c0dc33-aa3a-4094-8e9c-f6ff4b5b7be2
+*** Element info: {Using=xpath, value=//a[@data-hover=&apos;SIGNIN/SIGNUP&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at com.admin.newhostel.Login.signIn(Login.java:39)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 20 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.admin.newhostel.CreateHostel#signIn</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Unable to locate element: //a[@data-hover=&apos;SIGNIN/SIGNUP&apos;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;
+System info: host: &apos;qc&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.15.0-24-generic&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 60.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 7717, moz:profile: /tmp/rust_mozprofile.YmUI5V..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, platformVersion: 4.15.0-24-generic, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 00c0dc33-aa3a-4094-8e9c-f6ff4b5b7be2
+*** Element info: {Using=xpath, value=//a[@data-hover=&apos;SIGNIN/SIGNUP&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at com.admin.newhostel.Login.signIn(Login.java:39)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 20 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.admin.newhostel.AddRoom#newRooms</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.admin.newhostel.CreateHostel#newHostel</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.admin.newhostel.Login#signIn</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Hostel Booking</h2><h3 id="m5">com.guest.booking.Booking#bookRoom</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.guest.booking.HostelList#hostels</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.guest.booking.HostelQuotePrice#priceList</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
